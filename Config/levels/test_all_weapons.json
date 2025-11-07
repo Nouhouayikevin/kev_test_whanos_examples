@@ -1,0 +1,252 @@
+{
+  "metadata": {
+    "name": "Test All Weapons",
+    "description": "Test level for all weapon types and their charged versions",
+    "duration": 120,
+    "music": "audio.background_music_level1"
+  },
+  "events": [
+    {
+      "comment": "=== SETUP: BACKGROUND AND PLAYER ===",
+      "time": 0.0,
+      "action": "SPAWN",
+      "archetype": "scenery.parallax_bg_slow",
+      "pos": [0, 0]
+    },
+    {
+      "time": 0.0,
+      "action": "SPAWN",
+      "archetype": "scenery.parallax_bg_slow",
+      "pos": [1920, 0]
+    },
+    {
+      "time": 0.0,
+      "action": "SPAWN",
+      "archetype": "scenery.parallax_bg_fast",
+      "pos": [0, 0]
+    },
+    {
+      "time": 0.0,
+      "action": "SPAWN",
+      "archetype": "scenery.parallax_bg_fast",
+      "pos": [1920, 0]
+    },
+    {
+      "time": 0.0,
+      "action": "SPAWN",
+      "archetype": "player.player_ship",
+      "pos": [100, 300]
+    },
+    {
+      "time": 0.0,
+      "action": "SPAWN",
+      "archetype": "audio.background_music_level1",
+      "pos": [0, 0]
+    },
+
+    {
+      "comment": "=== PHASE 1: SIMPLE GUN TEST (0-15s) ===",
+      "time": 1.0,
+      "action": "MESSAGE",
+      "text": "Testing SIMPLE GUN (Default)"
+    },
+    {
+      "time": 2.0,
+      "action": "SPAWN",
+      "archetype": "enemies.bydos_slave",
+      "pos": [1300, 150]
+    },
+    {
+      "time": 2.5,
+      "action": "SPAWN",
+      "archetype": "enemies.bydos_slave",
+      "pos": [1300, 300]
+    },
+    {
+      "time": 3.0,
+      "action": "SPAWN",
+      "archetype": "enemies.bydos_slave",
+      "pos": [1300, 450]
+    },
+    {
+      "time": 7.0,
+      "action": "MESSAGE",
+      "text": "Testing SIMPLE GUN (Charged Shot)"
+    },
+    {
+      "time": 8.0,
+      "action": "MESSAGE",
+      "text": "Hold SPACE to charge!"
+    },
+    {
+      "time": 9.0,
+      "action": "SPAWN",
+      "archetype": "enemies.bydos_shooter",
+      "pos": [1300, 250]
+    },
+    {
+      "time": 9.5,
+      "action": "SPAWN",
+      "archetype": "enemies.bydos_shooter",
+      "pos": [1300, 450]
+    },
+
+    {
+      "comment": "=== PHASE 2: SPREAD GUN TEST (15-30s) ===",
+      "time": 15.0,
+      "action": "MESSAGE",
+      "text": "Testing SPREAD GUN"
+    },
+    {
+      "time": 16.0,
+      "action": "SPAWN",
+      "archetype": "powerups.spreadshot_pickup",
+      "pos": [1300, 300]
+    },
+    {
+      "time": 18.0,
+      "action": "SPAWN",
+      "archetype": "enemies.bydos_slave",
+      "pos": [1300, 150]
+    },
+    {
+      "time": 18.2,
+      "action": "SPAWN",
+      "archetype": "enemies.bydos_slave",
+      "pos": [1300, 300]
+    },
+    {
+      "time": 18.4,
+      "action": "SPAWN",
+      "archetype": "enemies.bydos_slave",
+      "pos": [1300, 450]
+    },
+    {
+      "time": 22.0,
+      "action": "MESSAGE",
+      "text": "Testing SPREAD GUN (Charged Shot)"
+    },
+    {
+      "time": 23.0,
+      "action": "MESSAGE",
+      "text": "Hold SPACE to charge!"
+    },
+    {
+      "time": 24.0,
+      "action": "SPAWN",
+      "archetype": "enemies.bydos_shooter",
+      "pos": [1300, 200]
+    },
+    {
+      "time": 24.5,
+      "action": "SPAWN",
+      "archetype": "enemies.bydos_shooter",
+      "pos": [1300, 400]
+    },
+
+    {
+      "comment": "=== PHASE 3: LASER GUN TEST (30-45s) ===",
+      "time": 30.0,
+      "action": "MESSAGE",
+      "text": "Testing LASER GUN"
+    },
+    {
+      "time": 31.0,
+      "action": "SPAWN",
+      "archetype": "powerups.laser_pickup",
+      "pos": [1300, 300]
+    },
+    {
+      "time": 33.0,
+      "action": "SPAWN",
+      "archetype": "enemies.bydos_slave",
+      "pos": [1300, 150]
+    },
+    {
+      "time": 33.2,
+      "action": "SPAWN",
+      "archetype": "enemies.bydos_slave",
+      "pos": [1300, 300]
+    },
+    {
+      "time": 33.4,
+      "action": "SPAWN",
+      "archetype": "enemies.bydos_slave",
+      "pos": [1300, 450]
+    },
+    {
+      "time": 37.0,
+      "action": "MESSAGE",
+      "text": "Testing LASER GUN (Charged Shot)"
+    },
+    {
+      "time": 38.0,
+      "action": "MESSAGE",
+      "text": "Hold SPACE to charge!"
+    },
+    {
+      "time": 39.0,
+      "action": "SPAWN",
+      "archetype": "enemies.bydos_shooter",
+      "pos": [1300, 200]
+    },
+    {
+      "time": 39.5,
+      "action": "SPAWN",
+      "archetype": "enemies.bydos_shooter",
+      "pos": [1300, 400]
+    },
+
+    {
+      "comment": "=== FINALE: WEAPON CHOICE (45-60s) ===",
+      "time": 45.0,
+      "action": "MESSAGE",
+      "text": "=== ALL WEAPONS AVAILABLE ==="
+    },
+    {
+      "time": 46.0,
+      "action": "SPAWN",
+      "archetype": "powerups.simple_gun_pickup",
+      "pos": [1300, 200]
+    },
+    {
+      "time": 46.0,
+      "action": "SPAWN",
+      "archetype": "powerups.spreadshot_pickup",
+      "pos": [1300, 300]
+    },
+    {
+      "time": 46.0,
+      "action": "SPAWN",
+      "archetype": "powerups.laser_pickup",
+      "pos": [1300, 400]
+    },
+    {
+      "time": 48.0,
+      "action": "SPAWN",
+      "archetype": "enemies.bydos_shooter",
+      "pos": [1300, 150]
+    },
+    {
+      "time": 48.2,
+      "action": "SPAWN",
+      "archetype": "enemies.bydos_shooter",
+      "pos": [1300, 300]
+    },
+    {
+      "time": 48.4,
+      "action": "SPAWN",
+      "archetype": "enemies.bydos_shooter",
+      "pos": [1300, 450]
+    },
+    {
+      "time": 55.0,
+      "action": "MESSAGE",
+      "text": "Test Complete!"
+    },
+    {
+      "time": 60.0,
+      "action": "VICTORY"
+    }
+  ]
+}

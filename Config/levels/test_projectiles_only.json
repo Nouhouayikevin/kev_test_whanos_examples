@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "name": "Projectiles Test Only",
+    "description": "Display of all projectile types"
+  },
+  "events": [
+
+    { "time": 0.0, "action": "SPAWN", "archetype": "scenery.parallax_bg_slow", "pos": [0, 0] },
+    { "time": 0.0, "action": "SPAWN", "archetype": "scenery.parallax_bg_slow", "pos": [1920, 0] },
+    { "time": 0.0, "action": "SPAWN", "archetype": "scenery.parallax_bg_fast", "pos": [0, 0] },
+    { "time": 0.0, "action": "SPAWN", "archetype": "scenery.parallax_bg_fast", "pos": [1920, 0] },
+    
+    { "time": 0.0, "action": "SPAWN", "archetype": "player.player_ship", "pos": [100, 300] },
+    { "time": 0.0, "action": "SPAWN", "archetype": "audio.background_music_level1", "pos": [0, 0] },
+    {
+      "comment": "=== Player SIMPLE Gun Projectiles ===",
+      "time": 0.0,
+      "action": "SPAWN",
+      "archetype": "projectiles.enemy_laser_bullet",
+      "pos": [1000, 100]
+    },
+    {
+      "time": 0.0,
+      "action": "SPAWN",
+      "archetype": "projectiles.enemy_laser_bullet_charged",
+      "pos": [1000, 200]
+    } ]
+}

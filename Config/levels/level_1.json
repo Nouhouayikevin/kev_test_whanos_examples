@@ -1,0 +1,29 @@
+{
+  "name": "First Contact",
+  "music_path": "Assets/music/level1.ogg",
+  "events": [
+
+    { "time": 0.0, "action": "SPAWN", "archetype": "scenery.parallax_bg_slow", "pos": [0, 0] },
+    { "time": 0.0, "action": "SPAWN", "archetype": "scenery.parallax_bg_slow", "pos": [1920, 0] },
+    { "time": 0.0, "action": "SPAWN", "archetype": "scenery.parallax_bg_fast", "pos": [0, 0] },
+    { "time": 0.0, "action": "SPAWN", "archetype": "scenery.parallax_bg_fast", "pos": [1920, 0] },
+    { "time": 0.0, "action": "SPAWN", "archetype": "player.player_ship", "pos": [100, 300] },
+    { "time": 0.0, "action": "SPAWN", "archetype": "audio.background_music_level1", "pos": [0, 0] },
+    { "time": 0.0, "action": "SPAWN", "archetype": "audio.background_music_level1", "pos": [0, 0] },
+
+    { "time": 2.0, "action": "SPAWN", "archetype": "enemies.bydos_default", "pos": [1300, 200] },
+    { "time": 2.5, "action": "SPAWN", "archetype": "enemies.bydos_default", "pos": [1300, 500] },
+    { "time": 4.0, "action": "SPAWN", "archetype": "enemies.bydos_spread", "pos": [1300, 350] },
+
+    { "time": 6.0, "action": "SPAWN", "archetype": "enemies.bydos_default", "pos": [1300, 100] },
+    { "time": 6.0, "action": "SPAWN", "archetype": "enemies.bydos_default", "pos": [1300, 600] },
+    
+    { "time": 8.5, "action": "SPAWN", "archetype": "enemies.bydos_spread", "pos": [1300, 200] },
+    { "time": 8.5, "action": "SPAWN", "archetype": "enemies.bydos_spread", "pos": [1300, 500] },
+    
+    { "time": 15.0, "action": "SPAWN", "archetype": "bosses.black_phantom", "pos": [1300, 300] },
+    
+
+    { "time": 20.0, "action": "VICTORY" }
+  ]
+}

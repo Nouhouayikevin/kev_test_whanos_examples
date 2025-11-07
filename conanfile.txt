@@ -1,0 +1,15 @@
+[requires]
+sfml/2.6.1
+boost/1.83.0
+
+[generators]
+CMakeDeps
+CMakeToolchain
+
+[options]
+sfml/*:shared=True
+boost/*:shared=False
+
+[imports]
+bin, *.dll -> ./bin # Copies all dll files from packages bin folder to my bin folder
+lib, *.dylib* -> ./bin # Copies all dylib files from packages lib folder to my bin folder

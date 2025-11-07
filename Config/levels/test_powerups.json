@@ -1,0 +1,33 @@
+{
+  "name": "PowerUp Test Level",
+  "music_path": "Assets/music/level1.ogg",
+  "events": [
+
+    { "time": 0.0, "action": "SPAWN", "archetype": "scenery.parallax_bg_slow", "pos": [0, 0] },
+    { "time": 0.0, "action": "SPAWN", "archetype": "scenery.parallax_bg_slow", "pos": [1920, 0] },
+    { "time": 0.0, "action": "SPAWN", "archetype": "scenery.parallax_bg_fast", "pos": [0, 0] },
+    { "time": 0.0, "action": "SPAWN", "archetype": "scenery.parallax_bg_fast", "pos": [1920, 0] },
+    { "time": 0.0, "action": "SPAWN", "archetype": "player.player_ship", "pos": [100, 300] },
+    { "time": 0.0, "action": "SPAWN", "archetype": "force.player_force", "pos": [150, 300] },
+    { "time": 0.0, "action": "SPAWN", "archetype": "audio.background_music_level1", "pos": [0, 0] },
+    {"time": 0.0, "action": "SPAWN", "archetype": "enemies.bydos_default", "pos": [1200, 100] },
+    {"time": 5.0, "action": "SPAWN", "archetype": "enemies.bydos_simple", "pos": [1200, 200] },
+    {"time": 10.0, "action": "SPAWN", "archetype": "enemies.bydos_spread", "pos": [1200, 300] },
+    {"time": 15.0, "action": "SPAWN", "archetype": "enemies.bydos_laser", "pos": [1200, 400] },
+    { "time": 2.0, "action": "SPAWN", "archetype": "powerups.spreadshot_gun_pickup", "pos": [1200, 100] },
+    { "time": 4.0, "action": "SPAWN", "archetype": "powerups.laser_gun_pickup", "pos": [1200, 200] },
+    { "time": 6.0, "action": "SPAWN", "archetype": "powerups.simple_gun_pickup", "pos": [1200, 300] },
+    
+    { "time": 8.0, "action": "SPAWN", "archetype": "powerups.heal_pickup_small", "pos": [1200, 150] },
+    { "time": 1.0, "action": "SPAWN", "archetype": "powerups.heal_pickup_large", "pos": [1000, 300] },
+
+    { "time": 2.0, "action": "SPAWN", "archetype": "powerups.score_pickup_bronze", "pos": [1200, 100] },
+    { "time": 16.0, "action": "SPAWN", "archetype": "powerups.score_pickup_silver", "pos": [1200, 550] },
+    { "time": 18.0, "action": "SPAWN", "archetype": "powerups.score_pickup_gold", "pos": [1200, 200] },
+    
+    { "time": 20.0, "action": "SPAWN", "archetype": "powerups.shield_pickup", "pos": [1200, 300] },
+    { "time": 22.0, "action": "SPAWN", "archetype": "powerups.speed_boost_pickup", "pos": [1200, 400] },
+    
+    { "time": 60.0, "action": "VICTORY" }
+  ]
+}

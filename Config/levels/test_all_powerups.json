@@ -1,0 +1,173 @@
+{
+  "metadata": {
+    "name": "Test All PowerUps",
+    "description": "Niveau de test complet pour tous les types de power-ups",
+    "duration": 45,
+    "music": "audio.background_music_level1"
+  },
+  "events": [
+    {
+      "comment": "=== PHASE 1: HEAL POWERUPS (0-10s) ===",
+      "time": 2.0,
+      "spawn": "powerups.heal_pickup_small",
+      "position": { "x": 1300, "y": 200 }
+    },
+    {
+      "time": 4.0,
+      "spawn": "powerups.heal_pickup_small",
+      "position": { "x": 1300, "y": 300 }
+    },
+    {
+      "time": 6.0,
+      "spawn": "powerups.heal_pickup_small",
+      "position": { "x": 1300, "y": 400 }
+    },
+    {
+      "comment": "Ennemi pour perdre de la vie",
+      "time": 3.0,
+      "spawn": "enemies.basic_enemy",
+      "position": { "x": 1300, "y": 250 }
+    },
+    {
+      "time": 5.0,
+      "spawn": "enemies.basic_enemy",
+      "position": { "x": 1300, "y": 350 }
+    },
+
+    {
+      "comment": "=== PHASE 2: SCORE POWERUPS (10-20s) ===",
+      "time": 11.0,
+      "spawn": "powerups.score_pickup_bronze",
+      "position": { "x": 1300, "y": 150 }
+    },
+    {
+      "time": 13.0,
+      "spawn": "powerups.score_pickup_bronze",
+      "position": { "x": 1300, "y": 250 }
+    },
+    {
+      "time": 15.0,
+      "spawn": "powerups.score_pickup_bronze",
+      "position": { "x": 1300, "y": 350 }
+    },
+    {
+      "time": 17.0,
+      "spawn": "powerups.score_pickup_bronze",
+      "position": { "x": 1300, "y": 450 }
+    },
+    {
+      "time": 19.0,
+      "spawn": "powerups.score_pickup_bronze",
+      "position": { "x": 1300, "y": 300 }
+    },
+
+    {
+      "comment": "=== PHASE 3: WEAPON CHANGE - SPREAD GUN (20-30s) ===",
+      "time": 21.0,
+      "spawn": "powerups.spreadshot_pickup",
+      "position": { "x": 1300, "y": 300 }
+    },
+    {
+      "comment": "Ennemis pour tester Spread Gun",
+      "time": 23.0,
+      "spawn": "enemies.basic_enemy",
+      "position": { "x": 1300, "y": 200 }
+    },
+    {
+      "time": 23.5,
+      "spawn": "enemies.basic_enemy",
+      "position": { "x": 1300, "y": 300 }
+    },
+    {
+      "time": 24.0,
+      "spawn": "enemies.basic_enemy",
+      "position": { "x": 1300, "y": 400 }
+    },
+    {
+      "time": 25.0,
+      "spawn": "enemies.sine_enemy",
+      "position": { "x": 1300, "y": 250 }
+    },
+    {
+      "time": 26.0,
+      "spawn": "enemies.sine_enemy",
+      "position": { "x": 1300, "y": 350 }
+    },
+
+    {
+      "comment": "=== PHASE 4: WEAPON CHANGE - LASER GUN (30-40s) ===",
+      "time": 31.0,
+      "spawn": "powerups.laser_pickup",
+      "position": { "x": 1300, "y": 300 }
+    },
+    {
+      "comment": "Ennemis pour tester Laser",
+      "time": 33.0,
+      "spawn": "enemies.basic_enemy",
+      "position": { "x": 1300, "y": 150 }
+    },
+    {
+      "time": 33.5,
+      "spawn": "enemies.basic_enemy",
+      "position": { "x": 1300, "y": 250 }
+    },
+    {
+      "time": 34.0,
+      "spawn": "enemies.basic_enemy",
+      "position": { "x": 1300, "y": 350 }
+    },
+    {
+      "time": 34.5,
+      "spawn": "enemies.basic_enemy",
+      "position": { "x": 1300, "y": 450 }
+    },
+    {
+      "time": 35.0,
+      "spawn": "enemies.sine_enemy",
+      "position": { "x": 1300, "y": 200 }
+    },
+    {
+      "time": 36.0,
+      "spawn": "enemies.sine_enemy",
+      "position": { "x": 1300, "y": 400 }
+    },
+
+    {
+      "comment": "=== PHASE 5: MIX - TOUS LES POWERUPS EN MÊME TEMPS (40-45s) ===",
+      "time": 41.0,
+      "spawn": "powerups.heal_pickup_small",
+      "position": { "x": 1300, "y": 150 }
+    },
+    {
+      "time": 41.0,
+      "spawn": "powerups.score_pickup_bronze",
+      "position": { "x": 1300, "y": 250 }
+    },
+    {
+      "time": 41.0,
+      "spawn": "powerups.spreadshot_pickup",
+      "position": { "x": 1300, "y": 350 }
+    },
+    {
+      "time": 41.0,
+      "spawn": "powerups.laser_pickup",
+      "position": { "x": 1300, "y": 450 }
+    },
+    {
+      "comment": "Boss final pour test complet",
+      "time": 43.0,
+      "spawn": "enemies.sine_enemy",
+      "position": { "x": 1300, "y": 200 }
+    },
+    {
+      "time": 43.5,
+      "spawn": "enemies.sine_enemy",
+      "position": { "x": 1300, "y": 400 }
+    },
+    {
+      "time": 44.0,
+      "spawn": "enemies.basic_enemy",
+      "position": { "x": 1300, "y": 300 }
+    }
+  ]
+}

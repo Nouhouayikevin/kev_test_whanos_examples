@@ -1,0 +1,13 @@
+{
+  "player": "Config/archetypes/player.json",
+  "enemies": "Config/archetypes/enemies.json",
+  "bosses": "Config/archetypes/bosses.json",
+  "projectiles": "Config/archetypes/projectiles.json",
+  "scenery": "Config/archetypes/scenery.json",
+  "ui": "Config/archetypes/ui.json",
+  "UI": "Config/archetypes/ui.json",
+  "weapons": "Config/archetypes/weapons.json",
+  "powerups": "Config/archetypes/powerups.json",
+  "audio": "Config/archetypes/audio.json",
+  "force": "Config/archetypes/force.json"
+}

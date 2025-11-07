@@ -1,0 +1,61 @@
+{
+  "name": "Weapon & PowerUp Test Arena",
+  "music_path": "Assets/music/test.ogg",
+  "events": [
+    
+    { "time": 0.0, "action": "SPAWN", "archetype": "scenery.parallax_bg_slow", "pos": [0, 0] },
+    { "time": 0.0, "action": "SPAWN", "archetype": "scenery.parallax_bg_slow", "pos": [1920, 0] },
+    { "time": 0.0, "action": "SPAWN", "archetype": "scenery.parallax_bg_fast", "pos": [0, 0] },
+    { "time": 0.0, "action": "SPAWN", "archetype": "scenery.parallax_bg_fast", "pos": [1920, 0] },
+    
+    { "time": 0.0, "action": "SPAWN", "archetype": "player.player_ship", "pos": [100, 300] },
+    { "time": 0.0, "action": "SPAWN", "archetype": "audio.background_music_level1", "pos": [0, 0] },
+
+    { "time": 2.0, "action": "MESSAGE", "text": "=== TEST ZONE 1: ARMES ===" },
+    { "time": 3.0, "action": "SPAWN", "archetype": "powerups.spreadshot_pickup", "pos": [1200, 300] },
+    { "time": 3.5, "action": "MESSAGE", "text": "SPREAD GUN disponible !" },
+    
+    { "time": 8.0, "action": "SPAWN", "archetype": "powerups.laser_pickup", "pos": [1200, 350] },
+    { "time": 8.5, "action": "MESSAGE", "text": "LASER GUN disponible !" },
+
+    { "time": 13.0, "action": "MESSAGE", "text": "=== TEST ZONE 2: CIBLES ===" },
+    { "time": 14.0, "action": "SPAWN", "archetype": "enemies.bydos_slave", "pos": [1300, 150] },
+    { "time": 14.2, "action": "SPAWN", "archetype": "enemies.bydos_slave", "pos": [1300, 250] },
+    { "time": 14.4, "action": "SPAWN", "archetype": "enemies.bydos_slave", "pos": [1300, 350] },
+    { "time": 14.6, "action": "SPAWN", "archetype": "enemies.bydos_slave", "pos": [1300, 450] },
+    { "time": 14.8, "action": "SPAWN", "archetype": "enemies.bydos_slave", "pos": [1300, 550] },
+
+    { "time": 18.0, "action": "MESSAGE", "text": "=== TEST ZONE 3: HEAL ===" },
+    { "time": 19.0, "action": "SPAWN", "archetype": "powerups.heal_pickup_small", "pos": [1200, 200] },
+    { "time": 19.5, "action": "MESSAGE", "text": "HEAL +25 HP disponible !" },
+    { "time": 21.0, "action": "SPAWN", "archetype": "powerups.heal_pickup_small", "pos": [1200, 400] },
+
+    { "time": 24.0, "action": "MESSAGE", "text": "=== TEST ZONE 4: SCORE ===" },
+    { "time": 25.0, "action": "SPAWN", "archetype": "powerups.score_pickup_bronze", "pos": [1200, 250] },
+    { "time": 25.5, "action": "MESSAGE", "text": "SCORE +500 disponible !" },
+    { "time": 27.0, "action": "SPAWN", "archetype": "powerups.score_pickup_bronze", "pos": [1200, 450] },
+
+    { "time": 30.0, "action": "MESSAGE", "text": "=== TEST ZONE 5: TIR CHARGE ===" },
+    { "time": 31.0, "action": "MESSAGE", "text": "Maintenez ESPACE pour charger !" },
+    { "time": 32.0, "action": "SPAWN", "archetype": "enemies.bydos_shooter", "pos": [1300, 200] },
+    { "time": 32.5, "action": "SPAWN", "archetype": "enemies.bydos_shooter", "pos": [1300, 400] },
+
+    { "time": 36.0, "action": "MESSAGE", "text": "=== TEST ZONE 6: COMBO ===" },
+    { "time": 37.0, "action": "SPAWN", "archetype": "powerups.spreadshot_pickup", "pos": [1200, 200] },
+    { "time": 37.0, "action": "SPAWN", "archetype": "powerups.heal_pickup_small", "pos": [1200, 350] },
+    { "time": 37.0, "action": "SPAWN", "archetype": "powerups.score_pickup_bronze", "pos": [1200, 500] },
+
+    { "time": 40.0, "action": "SPAWN", "archetype": "enemies.bydos_slave", "pos": [1300, 100] },
+    { "time": 40.2, "action": "SPAWN", "archetype": "enemies.bydos_slave", "pos": [1300, 200] },
+    { "time": 40.4, "action": "SPAWN", "archetype": "enemies.bydos_slave", "pos": [1300, 300] },
+    { "time": 40.6, "action": "SPAWN", "archetype": "enemies.bydos_slave", "pos": [1300, 400] },
+    { "time": 40.8, "action": "SPAWN", "archetype": "enemies.bydos_slave", "pos": [1300, 500] },
+    { "time": 41.0, "action": "SPAWN", "archetype": "enemies.bydos_slave", "pos": [1300, 600] },
+
+    { "time": 45.0, "action": "MESSAGE", "text": "=== TEST COMPLET ===" },
+    { "time": 46.0, "action": "SPAWN", "archetype": "powerups.laser_pickup", "pos": [1200, 300] },
+    
+    { "time": 50.0, "action": "MESSAGE", "text": "Tests terminés ! Bravo !" },
+    { "time": 60.0, "action": "VICTORY" }
+  ]
+}
